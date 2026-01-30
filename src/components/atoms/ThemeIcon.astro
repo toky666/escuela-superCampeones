@@ -1,0 +1,74 @@
+---
+
+---
+
+<script>
+  const themeToggle = document.getElementById("themeToggle");
+
+  // SIEMPRE true al cargar
+  toggleDarkMode(false);
+
+  themeToggle?.addEventListener("click", () => {
+    document.documentElement.classList.toggle("dark");
+    const isDark = document.documentElement.classList.contains("dark-mode");
+    toggleDarkMode(!isDark);
+  });
+
+  function toggleDarkMode(state: boolean) {
+    document.documentElement.classList.toggle("dark-mode", state);
+    localStorage.setItem("dark-mode", String(state));
+  }
+</script>
+
+<button id="themeToggle" aria-label="Toggle dark mode">
+  <iconify-icon
+    class="sun"
+    icon="line-md:sun-rising-loop"
+    width="32"
+    height="32"
+    style="color: #f9bf00"></iconify-icon>
+  <iconify-icon
+    class="moon"
+    icon="line-md:moon-loop"
+    width="27"
+    height="27"
+    style="color: aqua"></iconify-icon>
+</button>
+
+<style lang="scss">
+  @use "@sass/variables" as *;
+  #themeToggle {
+    display: grid;
+    place-content: center;
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    margin-right: 3rem;
+    top: 86%;
+    right: 0;
+    border-radius: 50%;
+    border: 2px solid aqua; //principal border toggle
+    background: rgba(2, 217, 255, 0.251);
+    backdrop-filter: blur(30px);
+    cursor: pointer;
+    z-index: 100;
+    transition: transform 0.3s ease-in-out;
+    filter: none !important;
+  }
+  #themeToggle:active {
+    transform: scale(0.5);
+  }
+  .sun {
+    display: block;
+  }
+  .moon {
+    display: none;
+  }
+
+  :global(.dark) .sun {
+    display: none;
+  }
+  :global(.dark) .moon {
+    display: block;
+  }
+</style>

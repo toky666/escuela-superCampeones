@@ -1,0 +1,22 @@
+.card-social__image {
+  z-index: -1;
+  width: 210px;
+  //height: 170px;
+  position: absolute;
+  top: 45%;
+  left: 69%;
+  //transform: rotate(30deg);
+  transition: all 0.3s linear;
+  .dark-mode & {
+    filter: drop-shadow(0 0 12px aqua);
+  }
+}
+.card-social:hover {
+  background: #010412;
+}
+
+.card-social:hover .card-social__image {
+  top: 40%;
+  left: 63%;
+  transform: rotate(0deg);
+}

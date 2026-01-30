@@ -1,0 +1,42 @@
+{
+  "name": "escuela-supercampeones",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.3.13",
+    "@astrojs/react": "^4.4.2",
+    "@astrojs/vercel": "^9.0.4",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@fontsource-variable/fira-code": "^5.2.7",
+    "@fontsource-variable/montserrat": "^5.2.8",
+    "@fontsource/questrial": "^5.2.8",
+    "@mui/material": "^7.3.7",
+    "@types/react": "^19.2.10",
+    "@types/react-dom": "^19.2.3",
+    "astro": "^5.17.1",
+    "astro-embed": "^0.12.0",
+    "dotenv": "^17.2.3",
+    "email-validator": "^2.0.4",
+    "email-verifier": "^0.0.1",
+    "iconify-icon": "^3.0.2",
+    "install": "^0.13.0",
+    "nodemailer": "^7.0.13",
+    "npm": "^11.8.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.1.0",
+    "@types/nodemailer": "^7.0.9",
+    "sass": "^1.77.8",
+    "stylelint": "^17.0.0",
+    "stylelint-prettier": "^5.0.3"
+  }
+}
