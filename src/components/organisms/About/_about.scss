@@ -18,7 +18,7 @@
       padding: 0 2rem;
     }
     .about__profile {
-      position: relative;
+      position: flex;
 
       @media screen and (max-width: 1194px) {
         display: flex;
@@ -67,5 +67,32 @@
         white-space: pre-line;
       }
     }
+  }
+}
+
+
+.image-side {
+  flex: 1;
+  min-width: 50%;
+}
+.image-side img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.descripcion__image {
+  flex: 1;
+  min-width: 50%;
+  background: #000; /* fondo oscuro para contraste */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  & h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
   }
 }

@@ -1,8 +1,8 @@
 export const menuData = [
 
-  { enlace: "/#about", texto: "About" },
-  { enlace: "/#skills", texto: "Skills" },
-  { enlace: "/#portfolio", texto: "Portfolio" },
-  { enlace: "/#social", texto: "Social" },
-  { enlace: "https://toky-mantenimiento.vercel.app", texto: "Blog" },
+  { enlace: "/#about", texto: "Nosotros" },
+  { enlace: "/#skills", texto: "Categorias" },
+  { enlace: "/#portfolio", texto: "Entrenamientos" },
+  { enlace: "/#social", texto: "Noticias" },
+  { enlace: "https://toky-mantenimiento.vercel.app", texto: "Iniciar Sesion" },
 ];

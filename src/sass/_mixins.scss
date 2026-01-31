@@ -10,6 +10,11 @@
   align-items: $align;
   justify-content: $justify;
 }
+@mixin leftFlex($justify: left, $align: left) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
 @mixin typography($font-size, $line-height, $font-weight) {
   font-size: $font-size;
   line-height: $line-height;

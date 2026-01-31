@@ -1,13 +1,13 @@
 export const socialIconsData = [
   {
-    icon: "fa:github-alt",
-    name: "GitHub",
-    link: "https://github.com/toky666",
+    icon: "ic:baseline-facebook",
+    name: "Facebook",
+    link: "https://www.facebook.com/abraham.rojastroche",
   },
   {
-    icon: "simple-icons:linkedin",
-    name: "Linkedin",
-    link: "https://www.linkedin.com/in/tokydev/",
+    icon: "streamline-logos:tiktok-logo-block",
+    name: "TikTok",
+    link: "https://www.tiktok.com/@abraham.104?lang=es",
   },
   {
     icon: "entypo-social:youtube-with-circle",

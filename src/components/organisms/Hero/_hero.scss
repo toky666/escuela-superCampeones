@@ -14,18 +14,18 @@
   writing-mode: horizontal-tb;
 }
 .hero__container {
-  @include centerFlex(space-evenly);
-  gap: 10rem;
+  //@include centerFlex(space-evenly);
+  //gap: 10rem;
   flex-wrap: wrap-reverse;
   width: 100%;
   max-width: 1300px;
-  padding-block: 10rem;
+  margin-top: 30rem;
   @include respond-to("medium") {
     gap: 1rem;
   }
 }
 .hero__content {
-  @include centerFlex(flex-start);
+  @include leftFlex(flex-start);
   flex-direction: column;
   @include respond-to("medium") {
     padding-bottom: 2rem;
@@ -40,6 +40,7 @@
   .hero__title {
     color: white;
     font-size: 7rem;
+    filter: drop-shadow(0 0 12px aqua);
     @include respond-to("medium") {
       margin-bottom: 2rem;
       text-align: center;
@@ -59,16 +60,15 @@
   }
   .hero__slogan {
     @include text-gradient("ligth");
-    font-size: 2rem;
+    display: inline;
+    align-items: center;
+    font-size: 3rem;
     font-weight: bold;
-    letter-spacing: 9px;
-    border-right: 5px solid;
+    letter-spacing: 2px;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    animation:
-      typing 2s steps(25),
-      cursor 0.4s step-end infinite alternate;
+    filter: drop-shadow(0 0 12px aqua);
     color: $ufo-green;
     // Estilo para modo oscuro
     .dark-mode & {
@@ -106,5 +106,19 @@
 @keyframes typing {
   from {
     width: 0;
+  }
+}
+.ball-rotation {
+  display: inline-block;
+  animation: rodar 5s linear infinite;
+  filter: drop-shadow(0 0 12px aqua);
+}
+
+@keyframes rodar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
   }
 }

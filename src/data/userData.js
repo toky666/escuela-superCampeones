@@ -3,7 +3,7 @@ export const userData = {
   name: "Super",
   lastName: "Campeones",
   userName: "Super Campeones",
-  sloganHero1: "Somos los mejores en Bolivia",
+  sloganHero1: "El fútbol es mi vida ",
   profilePicture: "/img/raw.png",
   profilePicture2: "/img/raw.png",
   aboutPicture:
