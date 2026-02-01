@@ -69,30 +69,40 @@
     }
   }
 }
-
-
 .image-side {
-  flex: 1;
-  min-width: 50%;
+  display: flex;
+  justify-content: center;
 }
-.image-side img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+.image__entrenamiento {
+  width: 70%;
+  height: 70%;
+  object-fit: cover; /* Solo esquina superior izquierda curvada */
+  border-top-left-radius: 50px; /* Las demás esquinas quedan rectas */
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
+
 .descripcion__image {
-  flex: 1;
-  min-width: 50%;
-  background: #000; /* fondo oscuro para contraste */
-  color: #fff;
+  background: #000000a8;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  position: absolute;
+  height: 25rem;
+  width: 20rem;
+  margin-top: -20rem;
+  margin-left: 30rem;
+  gap: 9rem;
+  border-top-left-radius: 0; /* Las demás esquinas quedan rectas */
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 0;
   & h3 {
     color: #fff;
     font-size: 1.5rem;
     line-height: 1.6;
     text-align: center;
+    padding: 4rem;
   }
 }

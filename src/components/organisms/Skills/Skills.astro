@@ -18,56 +18,169 @@ import { toolsData } from "@data/ToolsData";
   <div class="skills__container">
     <div class="skills__info">
       <div class="skills__textos">
-        <Title titleDesc="Skills" clase="title-dark" />
-        <h5 class="skills__description skills__description--subtitle">
-          {userData.aboutSkills.highlighted1}
-        </h5>
-        <p class="skills__description">
-          {userData.aboutSkills.intro}
-        </p>
-        <h5 class="skills__description skills__description--subtitle">
-          {userData.aboutSkills.highlighted2}
-        </h5>
-        <p class="skills__description">
-          {userData.aboutSkills.continuation}
-        </p>
-      </div>
-      <div class="skills__avatar__container">
-        <div class="skills__section">
-          <div class="skills__caja">
-            <CardTerminal clase="skills__terminal skills__popup">
-              <!-- Esto sirve de manera directa
-          <p class="skills__terminal__content">
-            {userData.terminalInfo}
-            <span class="cursor"></span></p>
-           -->
-              <p class="skills__terminal__content">
-                <span class="skills__terminal__textos">Backend Developer:</span>
-                NodeJS, MoleculerJS, and Java.
+        <Title titleDesc="Categorias" clase="title-dark" />
+        <section class="section blog" aria-labelledby="blog-label">
+          <div class="container">
+            <div class="title-wrapper" data-reveal>
+              <div>
+                <p class="section-subtitle has-before" id="blog-label">
+                  Fresh News
+                </p>
 
-                <span class="skills__terminal__textos">Frontend Developer:</span
-                >
-                HTML, CSS, JS, Bootstrap, Tailwind, SASS, Angular, and Astro.
-                <span class="skills__terminal__textos">Databases:</span>
-                MongoDB and MySQL.
-                <span class="skills__terminal__textos"
-                  >3D Modeling and Animation:</span
-                >
-                Blender, Unity and Vuforia.<span class="cursor"></span>
-              </p>
-            </CardTerminal>
+                <h2 class="h2 section-title">
+                  Our recent article for the electric vehicle systems
+                </h2>
+              </div>
+
+              <a href="#" class="btn btn-secondary">
+                <span class="span">View More Blog</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"
+                ></ion-icon>
+              </a>
+            </div>
+
+            <ul class="blog-list" data-reveal>
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 770; --height: 550;"
+                  >
+                    <img
+                      src="./img/blog-1.jpg"
+                      width="770"
+                      height="550"
+                      loading="lazy"
+                      alt="Energy Star Certified Electric Vehicle Chargers"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <time class="publish-date" datetime="2022-06-03"
+                      >03 Jun 2022</time
+                    >
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon name="person-outline" aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">Admin</span>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon name="chatbubble-outline" aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">2 Comments</span>
+                      </li>
+                    </ul>
+
+                    <h3 class="h5">
+                      <a href="#" class="card-title">
+                        Energy Star Certified Electric Vehicle Chargers
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 770; --height: 550;"
+                  >
+                    <img
+                      src="./img/blog-2.jpg"
+                      width="770"
+                      height="550"
+                      loading="lazy"
+                      alt="Charging Solution For Electric Car & Hybrid Car"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <time class="publish-date" datetime="2022-06-03"
+                      >03 Jun 2022</time
+                    >
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon name="person-outline" aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">Admin</span>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon name="chatbubble-outline" aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">2 Comments</span>
+                      </li>
+                    </ul>
+
+                    <h3 class="h5">
+                      <a href="#" class="card-title">
+                        Charging Solution For Electric Car & Hybrid Car
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 770; --height: 550;"
+                  >
+                    <img
+                      src="./img/blog-3.jpg"
+                      width="770"
+                      height="550"
+                      loading="lazy"
+                      alt="Home Charging Station For A Electric Vehicless"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <time class="publish-date" datetime="2022-06-03"
+                      >03 Jun 2022</time
+                    >
+
+                    <ul class="card-meta-list">
+                      <li class="card-meta-item">
+                        <ion-icon name="person-outline" aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">Admin</span>
+                      </li>
+
+                      <li class="card-meta-item">
+                        <ion-icon name="chatbubble-outline" aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">2 Comments</span>
+                      </li>
+                    </ul>
+
+                    <h3 class="h5">
+                      <a href="#" class="card-title">
+                        Home Charging Station For A Electric Vehicless
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="skills__image">
-            <img
-              id="skills__avatar"
-              class="skills__avatar"
-              src="/img/michiForense.png"
-              alt={`avatar funko of ${userData.userName}`}
-              width="300"
-              height="300"
-            />
-          </div>
-        </div>
+        </section>
       </div>
     </div>
     <CarrouselSkills skillsData={skillsData} />
