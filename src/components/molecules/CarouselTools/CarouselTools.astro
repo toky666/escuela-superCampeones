@@ -8,7 +8,7 @@ const { toolsData } = Astro.props;
     [...toolsData, ...toolsData].map((data) => (
       <div class="slide">
         <div class="tag">{data.name}</div>
-        <iconify-icon icon={data.icon} width="60" height="60" />
+        <img src={data.icon} loading="lazy" alt="slider-img" width="100" height="100" />
       </div>
     ))
   }

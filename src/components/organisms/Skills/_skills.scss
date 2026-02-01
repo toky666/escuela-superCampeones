@@ -15,7 +15,6 @@
   }
 
   &__container {
-    @include centerFlex(center, flex-start);
     flex-direction: column;
     max-width: 1300px;
     width: 100%;
@@ -180,46 +179,46 @@
   }
 }
 
-.blog { padding-block-end: 60px; }
-
-.blog .title-wrapper {
-  display: grid;
-  gap: 50px;
-  margin-block-end: 50px;
-}
-
-.blog .section-title { margin-block: 10px; }
-
 .blog-list {
   display: grid;
   gap: 30px;
 }
 
-.blog-card .card-banner { border-top-left-radius: var(--radius-30); }
+.blog-card .card-banner {
+  border-top-left-radius: var(30px);
+}
 
-.blog-card:is(:hover, :focus-within) .img-cover { transform: scale(1.2); }
+.img-cover {
+  border-top-left-radius: 50px; /* Las demás esquinas quedan rectas */
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 300px;
+  height: auto;
+}
 
 .blog-card .card-content {
   position: relative;
+  width: 270px;
   margin-inline-start: 30px;
   margin-block-start: -40px;
-  background-color: var(--white);
+  background-color: hsl(0, 0%, 100%);
   padding: 30px 35px;
-  box-shadow: var(--shadow);
-  border-bottom-right-radius: var(--radius-30);
+  box-shadow: 0 15px 40px 0 hsla(224, 24%, 47%, 0.1);
+  border-bottom-right-radius: 30px;
 }
 
 .blog-card .publish-date {
   position: absolute;
   bottom: 100%;
   left: 0;
-  background-color: var(--yellow-green);
-  color: var(--white);
+  background-color: hsl(86, 54%, 51%);
+  color: hsl(0, 0%, 100%);
   padding: 6px 25px;
-  font-size: var(--fs-11);
-  font-weight: var(--fw-600);
+  font-size: 1.3rem;
+  font-weight: 600;
   text-transform: uppercase;
-  border-top-left-radius: var(--radius-15);
+  border-top-left-radius: 20px;
 }
 
 .blog-card .card-meta-list {
@@ -235,17 +234,25 @@
 }
 
 .blog-card .card-meta-item ion-icon {
-  color: var(--yellow-green);
+  color: hsl(86, 54%, 51%);
   --ionicon-stroke-width: 50px;
 }
 
-.blog-card .card-meta-item .span { font-size: var(--fs-10); }
+.blog-card .card-meta-item .span {
+  font-size: 1.4rem;
+}
 
 .blog-card .card-title {
   margin-block-start: 10px;
-  transition: var(--transition-1);
+  transition: 0.25s ease;
 }
 
-.blog-card .card-title:is(:hover, :focus-visible) { color: var(--yellow-green); }
+.blog-card .card-title:is(:hover, :focus-visible) {
+  color: hsl(86, 54%, 51%);
+}
 
-
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}

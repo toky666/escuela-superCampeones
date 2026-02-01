@@ -1,43 +1,43 @@
 export const toolsData = [
   {
-    name: "Kali Linux",
-    icon: "skill-icons:kali-light",
+    name: "Adidas",
+    icon: "./img/adidas.png",
   },
   {
-    name: "Ubuntu",
-    icon: "logos:ubuntu",
+    name: "Adidas",
+    icon: "./img/adidas.png",
   },
   {
-    name: "Android Studio",
+    name: "Adidas",
 
-    icon: "skill-icons:androidstudio-light",
+    icon: "./img/adidas.png",
   },
   {
-    name: "Git",
+    name: "Adidas",
 
-    icon: "vscode-icons:file-type-git",
+    icon: "./img/adidas.png",
   },
 
   {
-    name: "VsCode",
-    icon: "devicon:vscode",
+    name: "Adidas",
+    icon: "./img/adidas.png",
   },
   {
-    name: "Figma",
+    name: "Adidas",
 
-    icon: "skill-icons:figma-dark",
+    icon: "./img/adidas.png",
   },
   {
-    name: "XAMPP",
-    icon: "logos:xampp",
+    name: "Adidas",
+    icon: "./img/adidas.png",
   },
   {
-    name: "Photoshop",
+    name: "Adidas",
 
-    icon: "devicon:photoshop",
+    icon: "./img/adidas.png",
   },
   {
-    name: "Illustrator",
-    icon: "skill-icons:illustrator",
+    name: "Adidas",
+    icon: "./img/adidas.png",
   },
 ];
