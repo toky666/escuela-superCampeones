@@ -11,28 +11,132 @@ import YoutubeModal from "@src/components/molecules/YoutubeModal/YoutubeModal.as
 ---
 
 <section id="social" class="social">
-  <Title
-    titleDesc="Find Me On   My Social Media"
-    clase="title-dark social__title"
-  />
+  <Title titleDesc="Entrenamientos" clase="title-dark social__title" />
   <div class="social__grid">
-    <div class="social__item social__item-1">
-      <SocialCard>
-        <DiscordCardContent />
-      </SocialCard>
+    <div class="video-card">
+      <div class="video-banner">
+        <iconify-icon
+          icon="iconamoon:play-circle-duotone"
+          class="play-btn"
+          width="40"
+          height="40"
+          style="color: #1afee4"></iconify-icon>
+        <img
+          src="img/video-banner.jpg"
+          width="970"
+          height="550"
+          loading="lazy"
+          alt="video banner"
+          class="video-img"
+        />
+      </div>
+      <div class="badge">
+        <div class="icon">
+          <iconify-icon
+            icon="cuida:user-outline"
+            width="24"
+            height="24"
+            style="color: #fe1a66"></iconify-icon>
+        </div>
+        <div class="text">
+          <h2>30K+</h2>
+          <p>VISITAS</p>
+        </div>
+      </div>
     </div>
-    <div class="social__item social__item-2">
-      <SocialCard>
-        <YoutubeCardContent server:defer />
-      </SocialCard>
+    <div class="video-card">
+      <div class="video-banner">
+        <iconify-icon
+          icon="iconamoon:play-circle-duotone"
+          class="play-btn"
+          width="40"
+          height="40"
+          style="color: #1afee4"></iconify-icon>
+        <img
+          src="img/video-banner.jpg"
+          width="970"
+          height="550"
+          loading="lazy"
+          alt="video banner"
+          class="video-img"
+        />
+      </div>
+      <div class="badge">
+        <div class="icon">
+          <iconify-icon
+            icon="cuida:user-outline"
+            width="24"
+            height="24"
+            style="color: #fe1a66"></iconify-icon>
+        </div>
+        <div class="text">
+          <h2>30K+</h2>
+          <p>VISITAS</p>
+        </div>
+      </div>
     </div>
-    <div class="social__item social__item-3">
-      <SocialCard>
-        <ContactFormMain />
-      </SocialCard>
+    <div class="video-card">
+      <div class="video-banner">
+        <iconify-icon
+          icon="iconamoon:play-circle-duotone"
+          class="play-btn"
+          width="40"
+          height="40"
+          style="color: #1afee4"></iconify-icon>
+        <img
+          src="img/video-banner.jpg"
+          width="970"
+          height="550"
+          loading="lazy"
+          alt="video banner"
+          class="video-img"
+        />
+      </div>
+      <div class="badge">
+        <div class="icon">
+          <iconify-icon
+            icon="cuida:user-outline"
+            width="24"
+            height="24"
+            style="color: #fe1a66"></iconify-icon>
+        </div>
+        <div class="text">
+          <h2>30K+</h2>
+          <p>VISITAS</p>
+        </div>
+      </div>
+    </div>
+    <div class="video-card">
+      <div class="video-banner">
+        <iconify-icon
+          icon="iconamoon:play-circle-duotone"
+          class="play-btn"
+          width="40"
+          height="40"
+          style="color: #1afee4"></iconify-icon>
+        <img
+          src="img/video-banner.jpg"
+          width="970"
+          height="550"
+          loading="lazy"
+          alt="video banner"
+          class="video-img"
+        />
+      </div>
+      <div class="badge">
+        <div class="icon">
+          <iconify-icon
+            icon="cuida:user-outline"
+            width="24"
+            height="24"
+            style="color: #fe1a66"></iconify-icon>
+        </div>
+        <div class="text">
+          <h2>30K+</h2>
+          <p>VISITAS</p>
+        </div>
+      </div>
     </div>
   </div>
-  <YoutubeModal server:defer />
-  <!--<YoutubeModal server:defer/> -->
 </section>
 <ToastNotification />

@@ -1,33 +1,33 @@
 const portafolioData = [
   {
-    imgSrc: "/img/portfolios/olakontaIMG.png",
-    title: "Free Financial and Professional Education",
+    imgSrc: "/img/portfolios/campeones.jpg",
+    title: "FCampeones de 2025 La Paz",
     skills: ["CSS", "HTML", "JavaScript"],
     excerpt:
-      "It is a platform that offers accessible courses and training in areas such as accounting, corporate finance, financial mathematics and customer service, with the aim of promoting personal, professional and business development.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     demoURL: "https://olakonta.vercel.app/",
     repoURL: "https://github.com/toky666/olakonta",
-    description: `<p class="modal__description"><strong>Ola Konta</strong> is a free educational platform dedicated to providing training programs in finance, accounting, and professional development. <strong>Its mission</strong> is to promote key skills such as collaboration, communication, decision-making and practical use of technology. It offers courses in areas such as: <strong>Banking Accounting, Financial Mathematics, Corporate Finance and Excel for Management.</strong></p>`,
+    description: `<p class="modal__description"><strong>Campeones</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</strong></p>`,
   },
-  {
-    imgSrc: "/img/portfolios/bancosIMG.png",
-    title: "Banking Community – Accounting and Finance",
+    {
+    imgSrc: "/img/portfolios/campeones.jpg",
+    title: "FCampeones de 2025 La Paz",
     skills: ["CSS", "HTML", "JavaScript"],
     excerpt:
-      "An educational and collaborative initiative that brings together students and professionals to share financial statements, experiences, and resources about banking in Bolivia.",
-    demoURL: "https://bancos-web.vercel.app/",
-    repoURL: "https://github.com/toky666/Bancos-Web",
-    description: `<p class="modal__description"><strong>Banking Community</strong> is a virtual platform created by students to simplify the learning of banking accounting and finance. Their mission is to <strong>offer up-to-date information</strong> and practical tools that improve academic and professional performance.</p>`,
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    demoURL: "https://olakonta.vercel.app/",
+    repoURL: "https://github.com/toky666/olakonta",
+    description: `<p class="modal__description"><strong>Campeones</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</strong></p>`,
   },
-  {
-    imgSrc: "/img/portfolios/costoIMG.png",
-    title: "Cost management and analysis",
+    {
+    imgSrc: "/img/portfolios/campeones.jpg",
+    title: "FCampeones de 2025 La Paz",
     skills: ["CSS", "HTML", "JavaScript"],
     excerpt:
-      "Costos Web is an educational and practical tool designed to support students and professionals in calculating, analyzing, and controlling business costs.",
-    demoURL: "https://costos-web.vercel.app/",
-    repoURL: "https://github.com/toky666/Costos-Web",
-    description: `<p class="modal__description">It allows you to understand and apply key concepts of <strong>cost accounting, budgeting, and financial management.</strong> It promotes values ​​of <strong>precision, transparency and efficiency</strong>, helping to train professionals capable of making strategic decisions based on data.</p>`,
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    demoURL: "https://olakonta.vercel.app/",
+    repoURL: "https://github.com/toky666/olakonta",
+    description: `<p class="modal__description"><strong>Campeones</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</strong></p>`,
   },
 ];
 
