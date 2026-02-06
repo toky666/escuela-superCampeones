@@ -13,6 +13,8 @@ import Portfolio from "@src/components/organisms/Portfolio/Portfolio.astro";
 import Social from "@src/components/organisms/Social/Social.astro";
 import Footer from "@molecules/Footer/Footer.astro";
 export const prerender = true;
+import Map from "@src/components/atoms/Map.astro";
+
 ---
 
 <Layout>
@@ -27,6 +29,7 @@ export const prerender = true;
 <Portfolio cardsLength={3} server:defer />
 <DividerBottom fill="shape-fill-3" />
 <Social server:defer />
+<Map />
 <Footer />
 <ToastNotification />
 <script>
