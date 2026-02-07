@@ -30,22 +30,10 @@ const getYear = () => new Date().getFullYear();
   <section class="footer__container">
     <Logo />
     <div class="footer__links">
-      <h2 class="footer__links__title">Fast Links</h2>
+      <h2 class="footer__links__title">Centro de Entrenamiento de Futsal</h2>
       <ul class="footer__list">
-        {
-          footerLinks.map((data) => (
-            <li class="footer__item">
-              <a
-                class="footer__link"
-                href={data.link}
-                target={data.target}
-                rel={data.rel}
-              >
-                {data.name}
-              </a>
-            </li>
-          ))
-        }
+        <li class="footer__item">Av. del Poeta</li>
+        <li class="footer__item">La Paz - Bolivia</li>
       </ul>
     </div>
     <div class="footer__links">
