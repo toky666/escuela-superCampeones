@@ -10,8 +10,8 @@ export const socialIconsData = [
     link: "https://www.tiktok.com/@abraham.104?lang=es",
   },
   {
-    icon: "entypo-social:youtube-with-circle",
-    name: "YouTube",
-    link: "https://www.youtube.com/@TokyDev-Aud",
+    icon: "mingcute:whatsapp-fill",
+    name: "WhatsApp",
+    link: "https://wa.me/59175252407?text=Hola%20quiero%20más%20información",
   },
 ];
