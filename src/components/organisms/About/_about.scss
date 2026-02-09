@@ -85,6 +85,7 @@
 
 .descripcion__image {
   background: #000000a8;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,9 +101,11 @@
   border-bottom-left-radius: 0;
   & h3 {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1.6;
     text-align: center;
     padding: 4rem;
+    font-family:  cursive;
+    font-style: italic;
   }
 }

@@ -19,6 +19,8 @@
     max-width: 1300px;
     width: 100%;
     padding: 2rem 1rem;
+    justify-content: center;
+    text-align: center;
 
     .skills__info {
       @include centerFlex();
@@ -149,8 +151,7 @@
   margin-top: 5rem;
 
   h2 {
-    margin-left: 22rem;
-
+    padding: 8rem 0 8rem 0;
     @include respond-to("medium") {
       margin: 0;
       text-align: center;
@@ -177,11 +178,6 @@
   from {
     width: 0;
   }
-}
-
-.blog-list {
-  display: grid;
-  gap: 30px;
 }
 
 .blog-card .card-banner {
@@ -254,5 +250,6 @@
 .blog-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
+  gap: 4rem;
+  padding: 8rem 10rem 8rem 10rem;
 }

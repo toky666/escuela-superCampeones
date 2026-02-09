@@ -31,8 +31,7 @@ cardSection?.addEventListener("click", (e) => {
   modalImg.alt = `Imagen de portada de ${data.title}`;
   modalTitle.innerText = data.title;
   modalDescription.innerHTML = data.description;
-  modalDemo.href = data.demoURL;
-  modalRepo.href = data.repoURL;
+
 
   modalTecnology.innerHTML = "";
   const cardTecnology = card.querySelector(".thecnology");
