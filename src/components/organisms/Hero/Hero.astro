@@ -6,9 +6,10 @@ import { userData } from "../../../data/userData.js";
 ---
 
 <section class="hero">
-  <video class="fullscreen-video" autoplay muted loop>
+  <video id="fullscreen-video" autoplay muted loop playsinline>
     <source src="/videos/intro.mp4" type="video/mp4" />
   </video>
+  <button id="btnVolumen"><iconify-icon icon="line-md:volume-high-off-twotone" width="24" height="24"></iconify-icon></button>
   <div class="hero__container">
     <div class="hero__content">
       <h1 class="hero__title">{userData.name}</h1>
@@ -31,7 +32,7 @@ import { userData } from "../../../data/userData.js";
 </section>
 
 <style>
-  .fullscreen-video {
+  #fullscreen-video {
     position: absolute;
     top: 0;
     left: 0;
@@ -49,4 +50,34 @@ import { userData } from "../../../data/userData.js";
     text-align: center;
     padding-top: 20vh;
   }
+
+  #btnVolumen {
+    position: absolute;
+    bottom: 20px;
+    left: 1rem;
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 9999999999;
+  }
 </style>
+<script>
+  const video = document.getElementById("fullscreen-video") as HTMLVideoElement;
+  const btnVolumen = document.getElementById("btnVolumen") as HTMLButtonElement;
+
+  if (btnVolumen && video) {
+    btnVolumen.addEventListener("click", () => {
+      if (video.muted) {
+        video.muted = false;
+        video.volume = 0.5;
+        btnVolumen.innerHTML = '<iconify-icon icon="line-md:volume-high-twotone" width="24" height="24"></iconify-icon>';
+      } else {
+        video.muted = true;
+        btnVolumen.innerHTML = '<iconify-icon icon="line-md:volume-high-off-twotone" width="24" height="24"></iconify-icon>';
+      }
+    });
+  }
+</script>

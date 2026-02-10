@@ -22,6 +22,10 @@
   align-content: center;
   padding: 20rem 2rem;
   width: 100%;
+  @include respond-to("medium") {
+    padding: 10rem 0rem;
+  }
+
   @include respond-to("small") {
     grid-template-columns: 1fr;
     width: unset;
@@ -63,6 +67,10 @@
   border-bottom-right-radius: 45px;
   animation: bounce 2.5s infinite;
   z-index: 5;
+  @include respond-to("medium") {
+    top: 7rem;
+    right: 26rem;
+  }
 }
 
 /* Círculo rosado detrás del ícono */
@@ -74,6 +82,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include respond-to("medium") {
+    width: 25px;
+    height: auto;
+  }
 }
 
 /* Ícono */
@@ -88,6 +100,9 @@
   font-size: 28px;
   font-weight: 700;
   color: #ff4f70;
+  @include respond-to("medium") {
+    font-size: 17px;
+  }
 }
 
 .text p {
@@ -95,6 +110,9 @@
   font-size: 14px;
   letter-spacing: 1px;
   color: #6a6a6a;
+  @include respond-to("medium") {
+    font-size: 12px;
+  }
 }
 @keyframes bounce {
   0%,
@@ -147,6 +165,9 @@
   width: 500px;
   height: auto;
   z-index: 2;
+  @include respond-to("medium") {
+    width: 350px;
+  }
 }
 
 .video-card {
@@ -185,6 +206,18 @@
   align-items: center;
   border-bottom-left-radius: 2rem;
   border-top-right-radius: 2rem;
+  @include respond-to("medium") {
+    top: -14rem;
+    right: 9%;
+    width: 114px;
+    height: 158px;
+  }
+  & img {
+    @include respond-to("medium") {
+      width: 5rem;
+      height: auto;
+    }
+  }
 }
 
 .icon-top {
@@ -212,6 +245,9 @@
   font-weight: bold;
   letter-spacing: 1px;
   color: #000;
+  @include respond-to("medium") {
+    font-size: 10px;
+  }
 }
 
 .banner-top p {
@@ -219,6 +255,9 @@
   font-size: 12px;
   font-weight: bold;
   color: #000;
+    @include respond-to("medium") {
+    font-size: 8.5px;
+  }
 }
 
 //****************************
@@ -242,6 +281,9 @@
   max-width: 800px;
   width: 70%;
   position: relative;
+  @include respond-to("medium") {
+    width: 94%;
+  }
 }
 .close-btn {
   position: absolute;
