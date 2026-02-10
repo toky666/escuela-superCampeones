@@ -99,13 +99,23 @@
   border-top-right-radius: 0;
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 0;
+  @include respond-to("medium") {
+    height: 15rem;
+    width: 14rem;
+    margin-top: 17rem;
+    margin-left: 14rem;
+  }
   & h3 {
     color: #fff;
     font-size: 2rem;
     line-height: 1.6;
     text-align: center;
     padding: 4rem;
-    font-family:  cursive;
+    font-family: cursive;
     font-style: italic;
+    @include respond-to("medium") {
+      font-size: 1.1rem;
+      padding: 3rem;
+    }
   }
 }
