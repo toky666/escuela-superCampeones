@@ -45,7 +45,15 @@ const getYear = () => new Date().getFullYear();
   <section class="footer__credits">
     <span class="footer__copy">
       Made with 🐱 under the MIT license | {getYear()}
-      {isExternal(footerLinks[0].link) ? "Yoky Coronel chavez" : "TokyDev"}
+      {
+        isExternal(footerLinks[0].link) ? (
+          "Yoky Coronel chavez"
+        ) : (
+          <a href="https://toky-portfolio-ten.vercel.app/"  class="neon-text" target="_blank" rel="noopener noreferrer">
+            TokyDev
+          </a>
+        )
+      }
     </span>
   </section>
 </footer>
