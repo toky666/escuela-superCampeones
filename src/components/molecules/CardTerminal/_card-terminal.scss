@@ -15,9 +15,9 @@
   width: 100%;
   padding: 0 1rem 2rem 1rem;
   z-index: 200;
-  color: $aqua;
+  color: $yellow;
   .dark-mode & {
-    color: $ufo-green;
+    color: $ufo-yellow;
   }
   @include respond-to("medium") {
     margin-bottom: 20rem;

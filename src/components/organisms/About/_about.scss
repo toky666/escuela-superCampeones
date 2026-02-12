@@ -35,8 +35,8 @@
         overflow: hidden;
         // Estilo para modo oscuro
         .dark-mode & {
-          border: 2px solid aqua;
-          filter: drop-shadow(0 0 12px aqua);
+          border: 2px solid $yellow;
+          filter: drop-shadow(0 0 12px $yellow);
         }
         @include respond-to("medium") {
           width: 100%;

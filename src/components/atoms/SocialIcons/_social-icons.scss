@@ -20,12 +20,12 @@
   }
   .social__icon {
     width: 30px;
-    color: $ufo-green;
+    color: $yellow;
   }
   .social__tooltip {
     display: none;
     padding: 0.3rem 8px;
-    background: $ufo-green;
+    background: $yellow;
     min-width: 37px;
     text-align: center;
     position: absolute;
@@ -42,7 +42,7 @@
       left: 50%;
       border-width: 5px;
       border-style: solid;
-      border-color: transparent transparent $ufo-green transparent;
+      border-color: transparent transparent $ufo-yellow transparent;
       transform: translate(-50%);
     }
   }
@@ -70,6 +70,6 @@
 }*/
 .dark {
   .social__link {
-    filter: drop-shadow(0 0 12px aqua);
+    filter: drop-shadow(0 0 12px $yellow);
   }
 }

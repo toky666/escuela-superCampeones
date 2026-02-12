@@ -94,11 +94,11 @@
   &__title {
     text-align: center;
     padding: 3rem;
-    color: #0222b9;
+    color: $ufo-red;
     @include typography(2.5rem, 1.5, 600);
     // Estilo para modo oscuro
     .dark-mode & {
-      color: $aqua;
+      color: $yellow;
     }
     //@include text-gradient("dark");
     @include respond-to("medium") {
@@ -166,15 +166,15 @@
     snakeWave 1s ease-in-out forwards 0.4s,
     floating 5s ease-in-out 1.2s infinite;
   display: inline-block;
-  filter: drop-shadow(0 0 6px $aqua);
+  filter: drop-shadow(0 0 6px $yellow);
   .modal__tooltip {
     position: absolute;
     top: 110%; /* o top: 100% si quieres que aparezca debajo */
     left: 50%;
     transform: translateX(-50%);
     background-color: #010412;
-    border: 1px solid $aqua;
-    color: $aqua;
+    border: 1px solid $yellow;
+    color: $yellow;
     padding: 6px 12px;
     border-radius: 4px;
     white-space: nowrap;

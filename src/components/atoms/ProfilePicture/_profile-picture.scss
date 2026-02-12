@@ -21,8 +21,8 @@
   background: black;
 }
 .dark .image__button {
-  background: aqua;
-  filter: drop-shadow(0 0 14px aqua); //principal imagen border
+  background: $yellow;
+  filter: drop-shadow(0 0 14px $yellow); //principal imagen border
 }
 
 .image__button:hover .hero__img {

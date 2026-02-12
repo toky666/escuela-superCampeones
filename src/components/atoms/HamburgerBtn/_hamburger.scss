@@ -41,10 +41,10 @@
   .hamburger-inner,
   .hamburger-inner::before,
   .hamburger-inner::after {
-    background-color: $ufo-green;
+    background-color: $ufo-yellow;
     // Estilo para modo oscuro
     .dark-mode & {
-      background-color: $aqua;
+      background-color: $yellow;
     }
   }
   .hamburger-inner:before {

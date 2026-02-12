@@ -5,8 +5,9 @@ $secundaryColor: var(--secundary-color);
 $french-blue: var(--french-blue);
 $french-white: #fff;
 $cetacean-blue:#140030;
-$ufo-green: #33FF76;
-$aqua: #58ECFF;
+$ufo-yellow: #f97511;
+$ufo-red: #a90908;
+$yellow: #f9c511;
 //$bg-image: linear-gradient(to bottom, #2f0569, #28075e, #220753, #1d0749, #18063e, #160439, #150235, #140030, #140030, #140030, #140030, #140030);
 
 /*Gradiente Ligth mode   */
@@ -106,5 +107,5 @@ $color-background-after: #060b1f;
 
 /* Gradientes del texto */
 $cetacean-blue: #010412;
-$text-over-dark: radial-gradient(circle,#191498 0%,#006999 100%);
-$text-over-light: radial-gradient(circle,#33FF76 0%,#58ECFF 100%);
+$text-over-dark: radial-gradient(circle,#e48612 0%,#a80707 100%);
+$text-over-light: radial-gradient(circle,#fff533 0%,#c1ef08 100%);

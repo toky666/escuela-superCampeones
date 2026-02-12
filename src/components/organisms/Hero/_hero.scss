@@ -40,7 +40,7 @@
   .hero__title {
     color: white;
     font-size: 7rem;
-    filter: drop-shadow(0 0 12px aqua);
+    filter: drop-shadow(0 0 12px $yellow);
     @include respond-to("medium") {
       text-align: center;
       font-size: 5em;
@@ -51,7 +51,7 @@
   }
 
   span:hover {
-    color: aqua;
+    color: $yellow;
   }
 
   .text__container {
@@ -73,14 +73,10 @@
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    filter: drop-shadow(0 0 12px aqua);
-    color: $ufo-green;
+    filter: drop-shadow(0 0 12px $yellow);
+    color: $ufo-yellow;
     font-family: "Brush Script MT", "Lucida Handwriting", cursive;
     // Estilo para modo oscuro
-    .dark-mode & {
-      color: $aqua;
-    }
-
     @include respond-to("medium") {
       font-size: 4rem;
       letter-spacing: normal;
@@ -98,8 +94,8 @@
   }
 }
 .dark .hero__title span {
-  color: aqua;
-  filter: drop-shadow(0 0 12px aqua);
+  color: $yellow;
+  filter: drop-shadow(0 0 12px $yellow);
 }
 /* animation cursor blinking */
 @keyframes cursor {
@@ -117,7 +113,7 @@
 .ball-rotation {
   display: inline-block;
   animation: rodar 5s linear infinite;
-  filter: drop-shadow(0 0 12px aqua);
+  filter: drop-shadow(0 0 12px $yellow);
 }
 
 @keyframes rodar {

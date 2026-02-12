@@ -56,11 +56,11 @@
 
       .skills__description--subtitle {
         font-weight: bold;
-        color: $aqua;
+        color: $yellow;
         // Estilo para modo oscuro
         .dark-mode & {
-          color: $ufo-green;
-          filter: drop-shadow(0 0 5px $ufo-green);
+          color: $ufo-yellow;
+          filter: drop-shadow(0 0 5px $ufo-yellow);
         }
         //@include text-gradient("dark");
       }
@@ -200,7 +200,7 @@
   margin-block-start: -40px;
   background-color: hsl(0, 0%, 100%);
   padding: 30px 35px;
-  box-shadow: 0 15px 40px 0 hsla(224, 24%, 47%, 0.1);
+  box-shadow: 0 15px 40px 0 hsla(223, 34%, 37%, 0.1);
   border-bottom-right-radius: 30px;
 }
 
@@ -208,7 +208,7 @@
   position: absolute;
   bottom: 100%;
   left: 0;
-  background-color: hsl(86, 54%, 51%);
+  background-color: $ufo-yellow;
   color: hsl(0, 0%, 100%);
   padding: 6px 25px;
   font-size: 1.3rem;
@@ -230,8 +230,7 @@
 }
 
 .blog-card .card-meta-item ion-icon {
-  color: hsl(86, 54%, 51%);
-  --ionicon-stroke-width: 50px;
+  color: $mainColor;
 }
 
 .blog-card .card-meta-item .span {
@@ -243,8 +242,8 @@
   transition: 0.25s ease;
 }
 
-.blog-card .card-title:is(:hover, :focus-visible) {
-  color: hsl(86, 54%, 51%);
+.categorie-text:is(:hover, :focus-visible) {
+  color: $ufo-yellow
 }
 
 .blog-list {

@@ -39,11 +39,12 @@
   max-width: fit-content;
   max-height: fit-content;
   z-index: 4;
+  color: $ufo-red;
 }
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 #010412;
+    box-shadow: 0 0 0 0 $ufo-red;
   }
   100% {
     box-shadow: 0 0 0 12px transparent;
@@ -75,7 +76,7 @@
 
 /* Círculo rosado detrás del ícono */
 .icon {
-  background: #ffe6ee;
+  background: #efcdd2;
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -85,6 +86,9 @@
   @include respond-to("medium") {
     width: 25px;
     height: auto;
+  }
+  & iconify-icon {
+    color: $ufo-red;
   }
 }
 
@@ -99,7 +103,7 @@
   margin: 0;
   font-size: 28px;
   font-weight: 700;
-  color: #ff4f70;
+  color: $ufo-red;
   @include respond-to("medium") {
     font-size: 17px;
   }
@@ -244,7 +248,8 @@
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #000;
+  color: $ufo-red;
+  font-weight: 600;
   @include respond-to("medium") {
     font-size: 10px;
   }
@@ -255,7 +260,7 @@
   font-size: 12px;
   font-weight: bold;
   color: #000;
-    @include respond-to("medium") {
+  @include respond-to("medium") {
     font-size: 8.5px;
   }
 }
@@ -289,7 +294,6 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  background: #f44336;
   color: #fff;
   border: none;
   border-radius: 4px;
