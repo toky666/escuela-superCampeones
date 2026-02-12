@@ -31,10 +31,6 @@
     padding-bottom: 2rem;
     padding-top: 2rem;
     width: 100%;
-    // Estilo para modo oscuro
-    .dark-mode & {
-      background: rgb(7 13 36 / 29%);
-    }
   }
 
   .hero__title {
@@ -55,12 +51,18 @@
   }
 
   .text__container {
-    display: inline-block;
+    width: fit-content;
+    display: flex;
+    text-align: end;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
     @include respond-to("medium") {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        padding-top: 3rem;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      padding-top: 3rem;
     }
   }
   .hero__slogan {

@@ -1,4 +1,5 @@
 @import "@sass/mixins";
+@import "@sass/variables";
 
 .title {
   font-size: 45px;
@@ -15,4 +16,5 @@
 
 .dark .title-dark {
   @include text-gradient("ligth");
+  filter: drop-shadow(0 0 12px $yellow);
 }

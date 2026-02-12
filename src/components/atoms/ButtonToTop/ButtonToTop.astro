@@ -26,8 +26,8 @@
   });
 </script>
 
-<style>
-  /* Estilos para cuando el botón está activo */
+<style lang="scss">
+  @use "@sass/variables" as *;
   .to__top.show {
     display: flex;
     align-items: center;
@@ -39,7 +39,7 @@
     width: 40px;
     height: 40px;
     border: 2px solid $yellow;
-    background: rgba(2, 217, 255, 0.251);
+    background: rgb(255 226 2 / 25%);
     z-index: 999;
     border-radius: 50%;
     cursor: pointer;

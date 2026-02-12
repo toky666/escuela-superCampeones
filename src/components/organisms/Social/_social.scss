@@ -68,6 +68,10 @@
   border-bottom-right-radius: 45px;
   animation: bounce 2.5s infinite;
   z-index: 5;
+  .dark-mode & {
+    border: 1px solid $yellow;
+    filter: drop-shadow(0 0 12px $yellow);
+  }
   @include respond-to("medium") {
     top: 7rem;
     right: 26rem;
@@ -210,6 +214,10 @@
   align-items: center;
   border-bottom-left-radius: 2rem;
   border-top-right-radius: 2rem;
+  .dark-mode & {
+    border: 1px solid $yellow;
+    filter: drop-shadow(0 0 12px $yellow);
+  }
   @include respond-to("medium") {
     top: -14rem;
     right: 9%;
@@ -286,6 +294,11 @@
   max-width: 800px;
   width: 70%;
   position: relative;
+  .dark-mode & {
+    background: #000000fa;
+    border: 1px solid $yellow;
+    filter: drop-shadow(0 0 12px $yellow);
+  }
   @include respond-to("medium") {
     width: 94%;
   }

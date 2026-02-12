@@ -14,6 +14,7 @@ button {
   .dark-mode & {
     border: 2px solid $yellow;
     filter: drop-shadow(0 0 5px $yellow);
+    color: $ufo-red;
   }
 }
 .year__btn.is-active {

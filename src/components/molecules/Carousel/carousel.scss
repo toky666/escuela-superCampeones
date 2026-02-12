@@ -85,6 +85,11 @@
   opacity: 0;
   font-size: 1.5rem;
   font-family: sans-serif;
+    .dark-mode & {
+    color: $ufo-red;
+    filter: drop-shadow(0 0 1px $yellow);
+  }
+  
 }
 
 .slide:hover .tag {
