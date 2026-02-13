@@ -213,6 +213,7 @@
   align-items: center;
   border-bottom-left-radius: 2rem;
   border-top-right-radius: 2rem;
+  transition: transform 0.3s ease-in-out;
   .dark-mode & {
     border: 1px solid $yellow;
     filter: drop-shadow(0 0 12px $yellow);
@@ -229,6 +230,9 @@
       height: auto;
     }
   }
+}
+.banner-top:hover {
+  transform: scale(1.05);
 }
 
 .icon-top {
