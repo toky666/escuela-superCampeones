@@ -1,6 +1,4 @@
 ---
-import BackgroundIconsFloat from "@src/components/atoms/BackgroundIconsFloat/BackgroundIconsFloat.astro";
-import ProfilePicture from "@src/components/atoms/ProfilePicture/ProfilePicture.astro";
 import SocialIcons from "@src/components/atoms/SocialIcons/SocialIcons.astro";
 import { userData } from "../../../data/userData.js";
 ---
@@ -31,39 +29,6 @@ import { userData } from "../../../data/userData.js";
   </div>
 </section>
 
-<style>
-  #fullscreen-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 0.7;
-  }
-
-  .overlay-content {
-    position: relative;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    padding-top: 20vh;
-  }
-
-  #btnVolumen {
-    position: absolute;
-    bottom: 20px;
-    left: 1rem;
-    padding: 10px 15px;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 9999999999;
-  }
-</style>
 <script>
   const video = document.getElementById("fullscreen-video") as HTMLVideoElement;
   const btnVolumen = document.getElementById("btnVolumen") as HTMLButtonElement;

@@ -7,9 +7,9 @@
   gap: 2rem;
   width: 100%;
   padding: 3rem 10rem;
-  background: var(--black);
+  background: $black;
   min-height: 15dvh;
-  color: white;
+  color: $white;
 
   &__container {
     @include centerFlex(space-between, start);
@@ -23,7 +23,7 @@
 
     &__title {
       font-size: 2.2rem;
-      color: white;
+      color: $white;
       .dark-mode & {
         color: $yellow;
       }
@@ -40,7 +40,7 @@
     color: $ufo-yellow;
 
     &:hover {
-      color: white;
+      color: $white;
     }
   }
   &__credits {
@@ -50,6 +50,7 @@
 
   &__copy {
     font-size: 1.28rem;
+    width: 60%;
   }
 }
 
@@ -75,7 +76,7 @@
   }
 }
 .neon-text {
-    color: #fff;
+    color: $white;
     text-shadow: 0 0 0px #ff005e, 0 0 2px #ff005e, 0 0 4px #ff005e, 0 0 6px #ff005e, 0 0 8px #ff005e;
     animation: glow 1.5s infinite alternate;
 }

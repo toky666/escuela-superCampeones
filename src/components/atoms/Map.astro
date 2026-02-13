@@ -1,12 +1,4 @@
 ---
-// Copyright (c) Pascal Brand
-// MIT License
-//
-// Implementation of https://leafletjs.com/examples/mobile/ with astro-leaflet
-//
-// Differences:
-// - skipping part of fullscreen
-
 import { Leaflet, FitWorld, Locate } from "astro-leaflet";
 ---
 
@@ -23,7 +15,7 @@ import { Leaflet, FitWorld, Locate } from "astro-leaflet";
 
     if (map) {
       map.removeControl(map.attributionControl);
-map.removeControl(map.zoomControl);
+      map.removeControl(map.zoomControl);
       // Centrar el mapa en las Canchas del Poeta
       const canchasDelPoeta = L.latLng(-16.502954, -68.128032);
       //map.setView(canchasDelPoeta, 17, { animate: false });
@@ -64,19 +56,21 @@ map.removeControl(map.zoomControl);
           opacity: 0.8 * (1 - (radius - 50) / (maxRadius - 50)), // borde también se desvanece
         });
       }, 120);
-L.marker(canchasDelPoeta)
-  .addTo(map)
-  .bindTooltip(`
+      L.marker(canchasDelPoeta)
+        .addTo(map)
+        .bindTooltip(
+          `
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5px;">
       <img src="img/entrenado.jpg" width="80" />
       <img src="img/entrenado.jpg" width="80" />
       <img src="img/entrenado.jpg" width="80" />
       <img src="img/entrenado.jpg" width="80" />
     </div>
-  `, { direction: 'top' });
+  `,
+          { direction: "top" },
+        );
 
-
-     // L.marker(canchasDelPoeta) .addTo(map) .bindPopup(` <div style="text-align:center"> <h4>Super Campeones</h4> <img src="img/entrenado.jpg" alt="Foto del lugar" width="200" /> </div> `);
+      // L.marker(canchasDelPoeta) .addTo(map) .bindPopup(` <div style="text-align:center"> <h4>Super Campeones</h4> <img src="img/entrenado.jpg" alt="Foto del lugar" width="200" /> </div> `);
     }
   });
 </script>

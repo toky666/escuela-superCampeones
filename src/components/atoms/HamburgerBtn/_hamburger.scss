@@ -41,7 +41,7 @@
   .hamburger-inner,
   .hamburger-inner::before,
   .hamburger-inner::after {
-    background-color: white;
+    background-color: $white;
     // Estilo para modo oscuro
     .dark-mode & {
       background-color: $yellow;

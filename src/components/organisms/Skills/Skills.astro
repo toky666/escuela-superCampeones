@@ -1,22 +1,13 @@
 ---
 import Title from "@src/components/atoms/Title/Title";
-import CarrouselSkills from "@src/components/molecules/CarouselSkills/CarrouselSkills.astro";
 import CarouselTools from "@src/components/molecules/CarouselTools/CarouselTools.astro";
-import CardTerminal from "@molecules/CardTerminal/cardTerminal.astro";
-
-import { userData } from "@data/userData";
-import { skillsData } from "@data/skillsData";
 import { toolsData } from "@data/ToolsData";
 //const { data, skills, tools } = Astro.props;
 ---
 
-<script>
-  import { d } from "@src/controllers/TerminalSkills.controller";
-</script>
-
 <section class="skills" id="skills">
   <div class="skills__container">
-    <Title titleDesc="Categorias" clase="title-dark" />
+    <Title titleDesc="Categorias" clase="title-dark"/>
     <div class="container">
       <ul class="blog-list" data-reveal>
         <li>
@@ -30,11 +21,13 @@ import { toolsData } from "@data/ToolsData";
 
             <div class="card-content">
               <h1 class="publish-date">Bichitos</h1>
-              <h3 class="categorie-text">EEsta categoria presenta de sub 15 al 19 años</h3>
+              <h3 class="categorie-text">
+                EEsta categoria presenta de sub 15 al 19 años
+              </h3>
             </div>
           </div>
         </li>
-                <li>
+        <li>
           <div class="blog-card">
             <img
               src="./img/blog-1.jpg"
@@ -45,11 +38,13 @@ import { toolsData } from "@data/ToolsData";
 
             <div class="card-content">
               <h1 class="publish-date">Bichitos</h1>
-              <h3 class="categorie-text">EEsta categoria presenta de sub 15 al 19 años</h3>
+              <h3 class="categorie-text">
+                EEsta categoria presenta de sub 15 al 19 años
+              </h3>
             </div>
           </div>
         </li>
-                <li>
+        <li>
           <div class="blog-card">
             <img
               src="./img/blog-1.jpg"
@@ -60,11 +55,13 @@ import { toolsData } from "@data/ToolsData";
 
             <div class="card-content">
               <h1 class="publish-date">Bichitos</h1>
-              <h3 class="categorie-text">EEsta categoria presenta de sub 15 al 19 años</h3>
+              <h3 class="categorie-text">
+                EEsta categoria presenta de sub 15 al 19 años
+              </h3>
             </div>
           </div>
         </li>
-                <li>
+        <li>
           <div class="blog-card">
             <img
               src="./img/blog-1.jpg"
@@ -75,7 +72,9 @@ import { toolsData } from "@data/ToolsData";
 
             <div class="card-content">
               <h1 class="publish-date">Bichitos</h1>
-              <h3 class="categorie-text">EEsta categoria presenta de sub 15 al 19 años</h3>
+              <h3 class="categorie-text">
+                EEsta categoria presenta de sub 15 al 19 años
+              </h3>
             </div>
           </div>
         </li>

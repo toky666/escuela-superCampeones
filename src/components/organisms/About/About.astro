@@ -1,6 +1,5 @@
 ---
 import Title from "@atoms/Title/Title";
-import ButtonAbout from "@atoms/ButtonAbout/ButtonAbout.astro";
 import { userData } from "@data/userData";
 export const prerender = true;
 const { data } = Astro.props;
@@ -24,14 +23,6 @@ import AboutData from "@data/about.mdx";
     </div>
     <div class="about__content">
       <Title titleDesc="Nosotros" clase="title-dark" />
-      <!-- <p class="about__description">
-          {userData.about.intro}
-        </p> -->
-      <!-- <h5 class="about__highlighted">{userData.about.highlighted}</h5> -->
-      <!-- <p class="about__description">
-          {data.about.continuation}
-        </p> -->
-      <!-- de aqui abajo esta bien -->
       <AboutData />
     </div>
   </article>

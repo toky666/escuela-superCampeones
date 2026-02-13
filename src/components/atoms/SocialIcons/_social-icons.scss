@@ -42,7 +42,7 @@
       left: 50%;
       border-width: 5px;
       border-style: solid;
-      border-color: transparent transparent $ufo-yellow transparent;
+      border-color: transparent transparent $yellow transparent;
       transform: translate(-50%);
     }
   }
@@ -63,11 +63,6 @@
   display: block;
 }
 
-/*@include respond-to("medium") {
-  .social__link {
-    animation: none;
-  }
-}*/
 .dark {
   .social__link {
     filter: drop-shadow(0 0 12px $yellow);

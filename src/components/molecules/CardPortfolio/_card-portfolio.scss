@@ -6,8 +6,8 @@
   border-radius: 15px;
   overflow: hidden;
   min-height: 250px;
-  background: black;
-  color: white;
+  background: $black;
+  color: $white;
   position: relative;
   width: 100%;
   .dark-mode & {
@@ -73,7 +73,7 @@
   background: #010412;
 }
 .card__description::-webkit-scrollbar-thumb {
-  background: #3aada3;
+  background: $yellow;
 }
 
 .card__cara--B > *:not(:last-child) {
@@ -84,42 +84,6 @@
   transform: translateY(-164px);
 }
 
-.thecnology {
-  transition: transform 0.3s ease;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0.6rem 2rem;
-  transform: translate(20px, -37px);
-  width: fit-content;
-  align-self: self-end;
-  border-radius: 15px 0 0;
-  align-items: center;
-  gap: 9px;
-  left: 74%;
-}
-.card:hover .thecnology {
-  transform: translate(20px, 0px);
-}
-.skill-item {
-  position: relative;
-  .skill__tooltip {
-    position: absolute;
-    top: 110%; /* o top: 100% si quieres que aparezca debajo */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #010412;
-    color: $yellow;
-    padding: 6px 12px;
-    border-radius: 4px;
-    white-space: nowrap;
-    z-index: 10;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  &:hover .skill__tooltip {
-    opacity: 1;
-  }
-}
 .card__btn {
   font-size: 1.2rem;
   padding: 0.5rem 1.2rem;

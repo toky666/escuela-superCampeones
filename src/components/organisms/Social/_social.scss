@@ -57,7 +57,7 @@
   top: 8rem;
   right: 39rem;
   align-items: center;
-  background: white;
+  background: $white;
   padding: 15px 25px;
   border-radius: 2px;
   width: fit-content;
@@ -169,7 +169,6 @@
 .video-img {
   display: flex;
   position: absolute;
-  background-color: red;
   width: 500px;
   height: auto;
   z-index: 2;
@@ -198,7 +197,7 @@
 }
 
 .banner-top {
-  background-color: #fff;
+  background-color: $white;
   position: absolute;
   top: -15rem;
   right: 3%;
@@ -236,7 +235,7 @@
   width: 94px;
   height: 118px;
   border-radius: 50%;
-  background: conic-gradient(#ff3c3c 0deg 270deg, transparent 270deg 360deg);
+  background: conic-gradient($ufo-red 0deg 270deg, transparent 270deg 360deg);
   position: relative;
 }
 
@@ -248,7 +247,7 @@
   width: 50%;
   height: 50%;
   border-radius: 50%;
-  background: #fff; /* color del hueco */
+  background: $white; /* color del hueco */
 }
 
 .banner-top h2 {
@@ -267,7 +266,7 @@
   margin: 10px 0 0;
   font-size: 12px;
   font-weight: bold;
-  color: #000;
+  color: $black;
   @include respond-to("medium") {
     font-size: 8.5px;
   }
@@ -288,7 +287,7 @@
   z-index: 9999;
 }
 .popup {
-  background: #fff;
+  background: $white;
   padding: 20px;
   border-radius: 8px;
   max-width: 800px;
@@ -307,7 +306,7 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  color: #fff;
+  color: $white;
   border: none;
   border-radius: 4px;
   cursor: pointer;

@@ -25,14 +25,12 @@
     class="sun"
     icon="line-md:sun-rising-loop"
     width="32"
-    height="32"
-    style="color: #ffffff"></iconify-icon>
+    height="32"></iconify-icon>
   <iconify-icon
     class="moon"
     icon="line-md:moon-loop"
     width="27"
-    height="27"
-    style="color: #f9bf00"></iconify-icon>
+    height="27"></iconify-icon>
 </button>
 
 <style lang="scss">
@@ -60,9 +58,11 @@
   }
   .sun {
     display: block;
+    color: $white;
   }
   .moon {
     display: none;
+    color: $yellow;
   }
 
   :global(.dark) .sun {

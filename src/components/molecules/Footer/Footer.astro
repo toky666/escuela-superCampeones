@@ -3,26 +3,6 @@ import Logo from "@src/components/atoms/Logo/Logo.astro";
 import SocialIcons from "@src/components/atoms/SocialIcons/SocialIcons.astro";
 import { isExternal } from "util/types";
 
-const footerLinks = [
-  {
-    name: "Repository",
-    link: "https://github.com/toky666/tokyDevFinal",
-    target: "_blank",
-    rel: "noopener noreferrer nofollow",
-  },
-  {
-    name: "Visit My Blog",
-    link: "https://toky-mantenimiento.vercel.app",
-    target: "_blank",
-    rel: "noopener noreferrer nofollow",
-  },
-  {
-    name: "Download My CV",
-    link: "/docs/cv.pdf",
-    target: "_blank",
-    rel: "noopener noreferrer nofollow",
-  },
-];
 const getYear = () => new Date().getFullYear();
 ---
 
@@ -45,15 +25,15 @@ const getYear = () => new Date().getFullYear();
   <section class="footer__credits">
     <span class="footer__copy">
       Made with 🐱 under the MIT license | {getYear()}
-      {
-        isExternal(footerLinks[0].link) ? (
-          "Yoky Coronel chavez"
-        ) : (
-          <a href="https://toky-portfolio-ten.vercel.app/"  class="neon-text" target="_blank" rel="noopener noreferrer">
-            TokyDev
-          </a>
-        )
-      }
+
+      <a
+        href="https://toky-portfolio-ten.vercel.app/"
+        class="neon-text"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        TokyDev
+      </a>
     </span>
   </section>
 </footer>

@@ -3,11 +3,8 @@
 ---
 
 <div class="to__top">
-  <iconify-icon
-    icon="line-md:arrow-small-up"
-    width="30"
-    height="30"
-    style="color: #ffffff"></iconify-icon>
+  <iconify-icon icon="line-md:arrow-small-up" width="30" height="30"
+  ></iconify-icon>
 </div>
 
 <script is:inline>
@@ -28,6 +25,7 @@
 
 <style lang="scss">
   @use "@sass/variables" as *;
+  @use "@sass/animations" as *;
   .to__top.show {
     display: flex;
     align-items: center;
@@ -51,5 +49,7 @@
   .to__top {
     display: none;
     opacity: 0;
+    color: $white;
+    animation: floating 5s linear infinite;
   }
 </style>

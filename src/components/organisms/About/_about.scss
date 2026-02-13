@@ -17,43 +17,7 @@
       gap: 3rem;
       padding: 0 2rem;
     }
-    .about__profile {
-      position: flex;
 
-      @media screen and (max-width: 1194px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-      }
-
-      .profile__box {
-        width: 30rem;
-        height: 30rem;
-        border-radius: 50%;
-        border: 2px solid $cetacean-blue;
-        overflow: hidden;
-        // Estilo para modo oscuro
-        .dark-mode & {
-          border: 2px solid $yellow;
-          filter: drop-shadow(0 0 12px $yellow);
-        }
-        @include respond-to("medium") {
-          width: 100%;
-          height: 100%;
-          max-width: 25rem;
-        }
-        &:hover img {
-          filter: saturate(0.45);
-        }
-        &__image {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          aspect-ratio: 1 / 1;
-        }
-      }
-    }
     .about__content {
       max-width: 532px;
       padding-top: 8rem;
@@ -68,65 +32,64 @@
         white-space: pre-line;
       }
     }
-  }
-}
-.image-side {
-  display: flex;
-  justify-content: center;
-    .dark-mode & {
-    filter: drop-shadow(0 0 12px $yellow);
-  }
-}
-.image__entrenamiento {
-  width: 70%;
-  height: 70%;
-  object-fit: cover; /* Solo esquina superior izquierda curvada */
-  border-top-left-radius: 50px; /* Las demás esquinas quedan rectas */
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.descripcion__image {
-  background: #000000a8;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  height: 25rem;
-  width: 20rem;
-  margin-top: -20rem;
-  margin-left: 30rem;
-  gap: 9rem;
-  border-top-left-radius: 0; /* Las demás esquinas quedan rectas */
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 50px;
-  border-bottom-left-radius: 0;
-  .dark-mode & {
-    border: 1px solid $yellow;
-    filter: drop-shadow(0 0 12px $yellow);
-  }
-  @include respond-to("medium") {
-    height: 15rem;
-    width: 14rem;
-    margin-top: 17rem;
-    margin-left: 14rem;
-  }
-  & h3 {
-    color: #fff;
-    font-size: 2rem;
-    line-height: 1.6;
-    text-align: center;
-    padding: 4rem;
-    font-family: cursive;
-    font-style: italic;
-    .dark-mode & {
-      filter: drop-shadow(0 0 12px $yellow);
+    .image-side {
+      display: flex;
+      justify-content: center;
+      .dark-mode & {
+        filter: drop-shadow(0 0 12px $yellow);
+      }
     }
-    @include respond-to("medium") {
-      font-size: 1.1rem;
-      padding: 3rem;
+    .image__entrenamiento {
+      width: 70%;
+      height: 70%;
+      object-fit: cover; /* Solo esquina superior izquierda curvada */
+      border-top-left-radius: 50px; /* Las demás esquinas quedan rectas */
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .descripcion__image {
+      background: #000000a8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      height: 25rem;
+      width: 20rem;
+      margin-top: -20rem;
+      margin-left: 30rem;
+      gap: 9rem;
+      border-top-left-radius: 0; /* Las demás esquinas quedan rectas */
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 50px;
+      border-bottom-left-radius: 0;
+      .dark-mode & {
+        border: 1px solid $yellow;
+        filter: drop-shadow(0 0 12px $yellow);
+      }
+      @include respond-to("medium") {
+        height: 15rem;
+        width: 14rem;
+        margin-top: -12rem;
+        margin-left: 19rem;
+      }
+      & h3 {
+        color: $white;
+        font-size: 2rem;
+        line-height: 1.6;
+        text-align: center;
+        padding: 4rem;
+        font-family: cursive;
+        font-style: italic;
+        .dark-mode & {
+          filter: drop-shadow(0 0 12px $yellow);
+        }
+        @include respond-to("medium") {
+          font-size: 1.3rem;
+          padding: 3rem;
+        }
+      }
     }
   }
 }

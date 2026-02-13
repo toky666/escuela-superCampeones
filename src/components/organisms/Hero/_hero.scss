@@ -1,8 +1,6 @@
 @use "@sass/mixins" as *;
 @use "@sass/variables" as *;
 
-@use "@atoms/ProfilePicture/profile-picture";
-
 .hero {
   width: 100%;
   min-height: 100dvh;
@@ -14,8 +12,6 @@
   writing-mode: horizontal-tb;
 }
 .hero__container {
-  //@include centerFlex(space-evenly);
-  //gap: 10rem;
   flex-wrap: wrap-reverse;
   width: 100%;
   max-width: 1300px;
@@ -34,7 +30,7 @@
   }
 
   .hero__title {
-    color: white;
+    color: $white;
     font-size: 7rem;
     filter: drop-shadow(0 0 12px $yellow);
     @include respond-to("medium") {
@@ -78,14 +74,11 @@
     filter: drop-shadow(0 0 12px $yellow);
     color: $ufo-yellow;
     font-family: "Brush Script MT", "Lucida Handwriting", cursive;
-    // Estilo para modo oscuro
     @include respond-to("medium") {
       font-size: 4rem;
       letter-spacing: normal;
       padding-right: 10 px;
       margin-right: 4px; //barra principal
-      //animation: none;
-      //border-right: none;
     }
   }
 }
@@ -116,6 +109,37 @@
   display: inline-block;
   animation: rodar 5s linear infinite;
   filter: drop-shadow(0 0 12px $yellow);
+}
+#fullscreen-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.overlay-content {
+  position: relative;
+  z-index: 1;
+  color: $white;
+  text-align: center;
+  padding-top: 20vh;
+}
+
+#btnVolumen {
+  position: absolute;
+  bottom: 20px;
+  left: 1rem;
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.6);
+  color: $white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 9999999999;
 }
 
 @keyframes rodar {
